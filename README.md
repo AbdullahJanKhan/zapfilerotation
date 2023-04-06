@@ -23,3 +23,6 @@ zap.InfoLevel,
 )
 
 logger := zap.New(core)
+
+# Contribution
+This project was born due to my professional needs but i would like to improve it, if anyone wants to join me in this journey just create a PR or raise an issue.
