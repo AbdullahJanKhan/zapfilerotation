@@ -19,7 +19,7 @@ writeFile := zapfilerotation.NewTimeRotationWriter(filename, time.Minute, 2)
 core := zapcore.NewCore(
 zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig()),
 zapcore.NewMultiWriteSyncer(zapcore.AddSync(writeFile)),
-zap.InfoLevel,
+zap.InfoLevel
 )
 
 logger := zap.New(core)
